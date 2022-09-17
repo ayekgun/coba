@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20220908 07:17:42.705" rpa="false" schemaversion="3">
+<suite id="s1" name="Uitesting" source="D:\PROJECT\RB\ebay\uitesting.robot">
+<test id="s1-t1" name="EBAY Test UI" line="6">
+<kw name="Open Page" library="resource">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220908 07:17:43.173" level="INFO">Opening browser 'chrome' to base url 'https://www.ebay.com'.</msg>
+<status status="PASS" starttime="20220908 07:17:43.172" endtime="20220908 07:17:49.711"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20220908 07:17:49.711" endtime="20220908 07:17:49.712"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220908 07:17:49.712" endtime="20220908 07:17:49.858"/>
+</kw>
+<kw name="Set Selenium Timeout" library="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" starttime="20220908 07:17:49.858" endtime="20220908 07:17:49.861"/>
+</kw>
+<status status="PASS" starttime="20220908 07:17:43.171" endtime="20220908 07:17:49.862"/>
+</kw>
+<kw name="Choose Category" library="resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${categor}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220908 07:17:49.865" level="INFO">Clicking element 'id:gh-shop-a'.</msg>
+<status status="PASS" starttime="20220908 07:17:49.864" endtime="20220908 07:17:49.990"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${computerTablet}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220908 07:17:49.991" level="INFO">Clicking element '//div[@id="gh-sbc-o"]//a[text()= "Computers &amp; tablets"]'.</msg>
+<status status="PASS" starttime="20220908 07:17:49.991" endtime="20220908 07:17:53.807"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${componentPart}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220908 07:17:53.808" endtime="20220908 07:17:53.884"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${componentPart}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220908 07:17:53.886" level="INFO">Clicking element '//li[@id="s0-16-12_2-0-1[0]-0-0-27[12]-0"]'.</msg>
+<status status="PASS" starttime="20220908 07:17:53.884" endtime="20220908 07:17:53.951"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${moboCpu}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220908 07:17:53.952" level="INFO">Clicking element '//li[@id="s0-16-12_2-0-1[0]-0-0-27[12]-0"]//li[6]'.</msg>
+<status status="PASS" starttime="20220908 07:17:53.952" endtime="20220908 07:17:56.911"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>scrollTo(0,300)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220908 07:17:56.912" level="INFO">Executing JavaScript:
+scrollTo(0,300)
+Without any arguments.</msg>
+<status status="PASS" starttime="20220908 07:17:56.911" endtime="20220908 07:17:57.001"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${allFilter}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220908 07:17:57.002" level="INFO">Clicking element '//button[@aria-label="All Filters"]'.</msg>
+<status status="PASS" starttime="20220908 07:17:57.002" endtime="20220908 07:17:57.928"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${allFilter}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220908 07:17:57.930" level="INFO">Clicking element '//button[@aria-label="All Filters"]'.</msg>
+<status status="PASS" starttime="20220908 07:17:57.929" endtime="20220908 07:17:57.994"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220908 07:18:00.001" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220908 07:17:57.994" endtime="20220908 07:18:00.001"/>
+</kw>
+<status status="PASS" starttime="20220908 07:17:49.863" endtime="20220908 07:18:00.012"/>
+</kw>
+<kw name="Filter By CPU" library="resource">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${filtByCpu}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220908 07:18:00.022" endtime="20220908 07:18:00.063"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${filtByCpu}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220908 07:18:00.063" level="INFO">Clicking element '//div/span[text()="CPU Series"]'.</msg>
+<status status="PASS" starttime="20220908 07:18:00.063" endtime="20220908 07:18:00.170"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${cbxProc}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220908 07:18:00.170" endtime="20220908 07:18:01.245"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${cbxProc}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220908 07:18:01.245" level="INFO">Clicking element '//input[contains(@id, "20i7") and contains(@id, "2011th")]/..'.</msg>
+<status status="PASS" starttime="20220908 07:18:01.245" endtime="20220908 07:18:01.368"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220908 07:18:03.379" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220908 07:18:01.368" endtime="20220908 07:18:03.379"/>
+</kw>
+<status status="PASS" starttime="20220908 07:18:00.020" endtime="20220908 07:18:03.379"/>
+</kw>
+<kw name="Filter By MainBoard" library="resource">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${filtByMobo}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220908 07:18:03.381" endtime="20220908 07:18:03.427"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${filtByMobo}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220908 07:18:03.428" level="INFO">Clicking element '//span[text()="Motherboard Brand"]'.</msg>
+<status status="PASS" starttime="20220908 07:18:03.427" endtime="20220908 07:18:03.545"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${cbxMobo}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220908 07:18:03.545" endtime="20220908 07:18:04.504"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${cbxMobo}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220908 07:18:04.504" level="INFO">Clicking element '//input[contains(@id,"20Brand_ASRock_cbx")]/..'.</msg>
+<status status="PASS" starttime="20220908 07:18:04.504" endtime="20220908 07:18:04.575"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220908 07:18:06.584" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220908 07:18:04.575" endtime="20220908 07:18:06.584"/>
+</kw>
+<status status="PASS" starttime="20220908 07:18:03.380" endtime="20220908 07:18:06.584"/>
+</kw>
+<kw name="Apply All Filter" library="resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${appl}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220908 07:18:06.586" level="INFO">Clicking element '//button[@aria-label="Apply"]'.</msg>
+<status status="PASS" starttime="20220908 07:18:06.585" endtime="20220908 07:18:06.665"/>
+</kw>
+<status status="PASS" starttime="20220908 07:18:06.585" endtime="20220908 07:18:06.666"/>
+</kw>
+<kw name="Check Filtered Match" library="resource">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${checkFilt}</arg>
+<arg>5</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220908 07:18:06.667" endtime="20220908 07:18:10.396"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>${checkFilt}</arg>
+<arg>2 filters applied</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20220908 07:18:10.734" level="INFO">Element '(//ul[@class="brm__list"]//span)[1]/..' contains text '2 filters applied'.</msg>
+<status status="PASS" starttime="20220908 07:18:10.396" endtime="20220908 07:18:10.734"/>
+</kw>
+<status status="PASS" starttime="20220908 07:18:06.666" endtime="20220908 07:18:10.734"/>
+</kw>
+<kw name="Close" library="resource">
+<kw name="Sleep" library="BuiltIn">
+<arg>7</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220908 07:18:17.740" level="INFO">Slept 7 seconds</msg>
+<status status="PASS" starttime="20220908 07:18:10.736" endtime="20220908 07:18:17.740"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220908 07:18:17.740" endtime="20220908 07:18:20.088"/>
+</kw>
+<status status="PASS" starttime="20220908 07:18:10.735" endtime="20220908 07:18:20.088"/>
+</kw>
+<status status="PASS" starttime="20220908 07:17:43.170" endtime="20220908 07:18:20.090"/>
+</test>
+<status status="PASS" starttime="20220908 07:17:42.710" endtime="20220908 07:18:20.096"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Uitesting">Uitesting</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
